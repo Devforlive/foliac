@@ -1,5 +1,26 @@
 .banner {
-	background-color: #3c4955;
+	padding-top: 30px;
+	/*background-color: #3c4955;*/
+	min-height: 650px;
+	/*background-image: url("../../img/computer.png"); /*Decorate element*/
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    background: url("../../img/computer.png") no-repeat center;
+	position: relative;
+	z-index: 1;
+}
+
+.banner:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(60, 73, 85, .7);
+	z-index: -1;
 }
 .banner-nav {
 	font-size: 0;
@@ -22,11 +43,51 @@
 .menu li {
 	display: inline-block;
 	padding:0 50px;
+	position: relative; /* accuel/ ... */
+}
+.menu li:before {
+	content:'/'; /* Pseudoelement */
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+.menu li:first-child:before {
+	display: none; /* delete pseudoelement from goole search*/
 }
 .menu li a {
+	padding-bottom: 10px;
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	text-decoration: none;
+	transition: all .3s ease;
+	border-bottom: 1px solid transparent; /* transparent прозрачный цвет */
+}
+.menu li a:hover {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fff;
 }
 
+.banner-info {
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	transform: translateY(50%);
+}
+.banner-title { /* В инспекторе Chrome */
+	margin-top: 0;
+	margin-bottom: 50px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: "Slim Joe";
+	font-size: 30px;
+	
+}
+
+.banner-title .first-line {
+	font-family: "Big John";
+	font-size: 46px;
+}
