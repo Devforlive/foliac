@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Foliac</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="banner">
-  	<div class="container">
+    <div class="container">
 
-  		<nav class="banner-nav">
-  <a href="#" class="logo">
-  <img src="img/foliac-logo.png" alt="">
-  </a>
-  			<ul class="menu">
-  				<li><a  href="#">Accueil</a></li>
-  				<li><a  href="pages/portfolio.html">Portfolio</a></li>
-  				<li><a  href="#">About</a></li>
-  				<li><a  href="#">Contact</a></li>
-  			</ul>
-  		</nav>
-  		
-	<section class="banner-info"> <!-- section.banner-info и жмем tab -->
-		<h1 class="baner-title">
-			<span class="first-line">VOICI VOTRE PROCHAIN PORTFOLIO</span>
-			<span>un template psd simple et gratuit
-			</span>
-		</h1>
-		<a href="pages/portfolio.html" class="btn">mes travaux</a>
-	</section>
+      <nav class="banner-nav">
+        <a href="#" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
 
-  	</div>
-<!-- container -->
+        <ul class="menu">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="pages/portfolio.html">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
+      <section class="banner-info">
+        <h1 class="banner-title">
+        <span class="first-line">voici votre prochain portfolio</span>
+        <span>un template psd simple et gratuit</span>
+        </h1>
+        <a href="pages/portfolio.html" class="btn">mes travaux</a>
+      </section>
+
+    </div>
+    <!-- .container -->
   </header>
+
+  <main>
+    <section class="tabs">
+      <div class="container">
+
+        <div class="tabs__nav-wrap">
+          <ul class="tabs__nav buttons-list clearfix">
+            <li class="buttons-list__item buttons-list__item--active">Tous les projets</li>
+            <li class="buttons-list__item">Webdesign</li>
+            <li class="buttons-list__item">UI/UX design</li>
+            <li class="buttons-list__item">Illustration</li>
+            <li class="buttons-list__item buttons-list__item--last">Motion design</li>
+          </ul>
+        </div>
+
+        <div class="tabs__content clearfix">
+          
+            <div class="tabs__col tabs__col--narrow">
+              <div class="tabs__image-wrap tabs__image-wrap--first">
+                <img src="img/groupe-2.png" alt="" class="tabs__image">
+              </div>
+              <div class="tabs__image-wrap tabs__image-wrap--second">
+                <img src="img/group-4.png" alt="" class="tabs__image">
+              </div>
+            </div>
+            <!-- .tabs__col -->
+            <div class="tabs__col tabs__col--wide">
+              <div class="tabs__image-wrap tabs__image-wrap--third">
+                <img src="img/groupe-1.png" alt="" class="tabs__image">
+              </div>
+              <div class="tabs__image-wrap tabs__image-wrap--forth">
+                <img src="img/group-3.png" alt="" class="tabs__image">
+              </div>
+            </div>
+            <!-- .tabs__col -->
+
+        </div>
+        <!-- .tabs__content -->
+      </div>
+      <!-- .container -->
+    </section>
+  </main>
+
+
 </body>
+
 </html>
